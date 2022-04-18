@@ -2,7 +2,6 @@ package ru.roombooking.history.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jdbc.core.BatchPreparedStatementSetter;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
@@ -18,13 +17,15 @@ import ru.roombooking.history.model.dto.RecordTableDTO;
 import ru.roombooking.history.repository.RecordTableRepository;
 import ru.roombooking.history.repository.RecordTableViewRepository;
 import ru.roombooking.history.service.RecordTableService;
-import static ru.roombooking.history.exception.ExceptionMessage.*;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import static ru.roombooking.history.exception.ExceptionMessage.ID_NOT_FOUND;
+import static ru.roombooking.history.exception.ExceptionMessage.RECORD_NOT_FOUND;
 
 @RequiredArgsConstructor
 @Service
@@ -85,16 +86,6 @@ public class RecordTableServiceImpl implements RecordTableService {
         log.info("Удаление бронирования по ID успешно завершено");
         return recordTableDTO;
     }
-
-    /*private RecordTable toRecordTable(RecordTableDTO model) {
-        RecordTable recordTable = mapper.toModel(model);
-        RecordTable temp = recordTableRepository.findByNumberRoomIdAndEmployeeId(recordTable.getNumberRoomId(),
-                recordTable.getEmployeeId()).orElseThrow(() ->
-                new RecordTableBadRequestException(RECORD_NOT_FOUND.getMessage()));
-        recordTable.setNumberRoomId(temp.getNumberRoomId());
-        recordTable.setEmployeeId(temp.getEmployeeId());
-        return recordTable;
-    }*/
 
     @Override
     public List<RecordTableDTO> findAllByEmployeeFullNameAndRecordAndIsActiveAndNumberRoom() {

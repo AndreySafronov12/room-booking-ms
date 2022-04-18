@@ -2,14 +2,13 @@ package ru.roombooking.employee.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jdbc.core.BatchPreparedStatementSetter;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.roombooking.employee.model.Employee;
-import ru.roombooking.employee.model.dto.ProfileDTO;
 import ru.roombooking.employee.model.EmployeeView;
+import ru.roombooking.employee.model.dto.ProfileDTO;
 import ru.roombooking.employee.repository.EmployeeViewRepository;
 import ru.roombooking.employee.service.RoomService;
 

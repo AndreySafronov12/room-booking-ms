@@ -2,7 +2,6 @@ package ru.roombooking.history.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jdbc.core.BatchPreparedStatementSetter;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
@@ -11,11 +10,13 @@ import ru.roombooking.history.exception.VscRoomBadRequestException;
 import ru.roombooking.history.model.VscRoom;
 import ru.roombooking.history.repository.VscRoomRepository;
 import ru.roombooking.history.service.VscRoomService;
-import static ru.roombooking.history.exception.ExceptionMessage.*;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
+
+import static ru.roombooking.history.exception.ExceptionMessage.ID_NOT_FOUND;
+import static ru.roombooking.history.exception.ExceptionMessage.NUMBER_ROOM_ID_NOT_FOUND;
 
 @RequiredArgsConstructor
 @Service

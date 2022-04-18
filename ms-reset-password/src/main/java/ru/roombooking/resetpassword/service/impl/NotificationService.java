@@ -5,7 +5,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,9 +15,9 @@ import ru.roombooking.resetpassword.feign.EmployeeFeignClient;
 import ru.roombooking.resetpassword.feign.MailFeignClient;
 import ru.roombooking.resetpassword.feign.ProfileFeignClient;
 import ru.roombooking.resetpassword.model.PasswordConfirmationToken;
-import ru.roombooking.resetpassword.model.dto.ProfileDTO;
 import ru.roombooking.resetpassword.model.dto.EmployeeDTO;
 import ru.roombooking.resetpassword.model.dto.MailParams;
+import ru.roombooking.resetpassword.model.dto.ProfileDTO;
 import ru.roombooking.resetpassword.service.PasswordConfirmationTokenService;
 
 import java.util.UUID;

@@ -2,16 +2,17 @@ package ru.roombooking.profile.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
-import static ru.roombooking.profile.exception.ExceptionMessage.*;
 import ru.roombooking.profile.exception.ProfileNotFoundException;
 import ru.roombooking.profile.model.Profile;
 import ru.roombooking.profile.repository.ProfileRepository;
 import ru.roombooking.profile.service.ProfileService;
 
 import java.util.List;
+
+import static ru.roombooking.profile.exception.ExceptionMessage.ID_NOT_FOUND;
+import static ru.roombooking.profile.exception.ExceptionMessage.PROFILE_NOT_FOUND;
 
 @RequiredArgsConstructor
 @Service

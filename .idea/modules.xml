@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/departments.main.iml" filepath="$PROJECT_DIR$/.idea/modules/departments.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/departments.test.iml" filepath="$PROJECT_DIR$/.idea/modules/departments.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/employee.main.iml" filepath="$PROJECT_DIR$/.idea/modules/employee.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/employee.test.iml" filepath="$PROJECT_DIR$/.idea/modules/employee.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ms-admin.iml" filepath="$PROJECT_DIR$/.idea/modules/ms-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/registration.main.iml" filepath="$PROJECT_DIR$/.idea/modules/registration.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/registration.test.iml" filepath="$PROJECT_DIR$/.idea/modules/registration.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/room-booking-ms.iml" filepath="$PROJECT_DIR$/.idea/room-booking-ms.iml" />
     </modules>
   </component>

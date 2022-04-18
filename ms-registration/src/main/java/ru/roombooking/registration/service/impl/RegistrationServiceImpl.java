@@ -24,7 +24,6 @@ public class RegistrationServiceImpl implements RegistrationService {
     private final VCMapper<EmployeeDTO, RegistrationDTO> myEmployeeMapper;
     private final VCMapper<ProfileDTO, RegistrationDTO> myProfileMapper;
 
-    // FIXME: 31.01.2022 костыль, если возникает ошибка при сохранении employee, то удаляем новый профиль
     @Override
     public void saveEmployeeAndProfile(RegistrationDTO model) {
         ProfileDTO tempProfile;

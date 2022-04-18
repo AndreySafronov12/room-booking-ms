@@ -3,7 +3,6 @@ package ru.roombooking.employee.service.impl;
 import feign.FeignException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 import ru.roombooking.employee.exception.EmployeeBadRequestException;
@@ -19,7 +18,8 @@ import ru.roombooking.employee.service.EmployeeService;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static ru.roombooking.employee.exception.ExceptionMessages.*;
+import static ru.roombooking.employee.exception.ExceptionMessages.EMPLOYEE_NOT_FOUND_BY_PROFILE_ID;
+import static ru.roombooking.employee.exception.ExceptionMessages.ID_NOT_FOUND;
 
 @Service
 @RequiredArgsConstructor
