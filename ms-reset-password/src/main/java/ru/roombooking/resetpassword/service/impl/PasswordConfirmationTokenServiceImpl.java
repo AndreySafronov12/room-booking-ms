@@ -11,8 +11,6 @@ import ru.roombooking.resetpassword.model.PasswordConfirmationToken;
 import ru.roombooking.resetpassword.repository.PasswordConfirmationTokenRepository;
 import ru.roombooking.resetpassword.service.PasswordConfirmationTokenService;
 
-import java.util.NoSuchElementException;
-
 @RequiredArgsConstructor
 @Service
 @Slf4j
