@@ -1,4 +1,4 @@
-package ru.roombooking.history.maper;
+package ru.roombooking.history.mapper;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

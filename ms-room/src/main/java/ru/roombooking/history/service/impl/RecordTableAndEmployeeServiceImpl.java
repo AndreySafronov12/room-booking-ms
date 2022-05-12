@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import ru.roombooking.history.exception.*;
 import ru.roombooking.history.feign.EmployeeFeignClient;
 import ru.roombooking.history.feign.ProfileFeignClient;
-import ru.roombooking.history.maper.VCMapper;
+import ru.roombooking.history.mapper.VCMapper;
 import ru.roombooking.history.model.RecordTable;
 import ru.roombooking.history.model.RecordTableView;
 import ru.roombooking.history.model.Role;

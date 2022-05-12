@@ -1,4 +1,4 @@
-package ru.roombooking.history.maper;
+package ru.roombooking.history.mapper;
 
 public interface VCMapper<Model, DTO> {
     DTO toDTO(Model model);

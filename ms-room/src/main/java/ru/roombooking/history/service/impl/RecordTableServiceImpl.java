@@ -10,7 +10,7 @@ import ru.roombooking.history.exception.RecordTableBadRequestException;
 import ru.roombooking.history.exception.RecordTableDeleteException;
 import ru.roombooking.history.exception.RecordTableSaveException;
 import ru.roombooking.history.exception.RecordTableUpdateException;
-import ru.roombooking.history.maper.VCMapper;
+import ru.roombooking.history.mapper.VCMapper;
 import ru.roombooking.history.model.RecordTable;
 import ru.roombooking.history.model.RecordTableView;
 import ru.roombooking.history.model.dto.RecordTableDTO;

@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import static ru.roombooking.history.exception.ExceptionMessage.*;
 import ru.roombooking.history.exception.RecordTableBadRequestException;
-import ru.roombooking.history.maper.VCMapper;
+import ru.roombooking.history.mapper.VCMapper;
 import ru.roombooking.history.model.HistoryRecordTableEmployee;
 import ru.roombooking.history.model.dto.RecordTableDTO;
 import ru.roombooking.history.repository.HistoryRecordTableEmployeeRepository;
